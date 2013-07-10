@@ -2,11 +2,37 @@
   <head>
     <!-- Set the Title in the Browser Window Bar -->
     <title>Square Cafe</title>
+   
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+  <script src = "square.js"></script>
+   <script src = "jquery.cookie.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+   <link rel="stylesheet" type="text/css" href="square.css" />
 
-    <link rel="stylesheet" type="text/css" href="square.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  </head>
-  <body>
+  <script>
+  // $(function() {
+  //   $( "#dialog" ).dialog();
+  // });
+
+
+  visited = $.cookie("visited")
+
+  if (visited == null) {
+    $( "#dialog" ).dialog();
+  });
+
+  </script>
+</head>
+<body>
+
+<div id="dialog" title="Basic dialog">
+  <p>Sign up for our emails. </p>
+</div>
+
+
+
+
     <div id="headmast">
       <h1>Square Cafe</h1>
       <h2>716 Congress, Suite 404, Austin, TX</p>
@@ -66,14 +92,14 @@
       </div>
 
 
-      <div class="panel">
+<!--       <div class="panel">
         <h2>Where We're At</h2>
         <iframe
           width="100%"
           height="450"
           frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=austin+tx&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.679342,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;ll=30.307689,-97.753601&amp;spn=0.679622,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=austin+tx&amp;aq=&amp;sll=30.307761,-97.753401&amp;sspn=0.679342,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Austin,+Travis,+Texas&amp;ll=30.307689,-97.753601&amp;spn=0.679622,1.352692&amp;t=m&amp;z=10" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-      </div>
+      </div> -->
 
     </div>
 

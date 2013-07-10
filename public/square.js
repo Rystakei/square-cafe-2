@@ -1,3 +1,8 @@
+
+
+
+
+
 function calculate_total_cost_of_all_drinks() {
   var total_cost = 0;
 
@@ -22,6 +27,20 @@ function generate_blank_drink_order() {
 
 
 $(document).ready(function() {
+
+  visited = $.cookie("visited")
+
+  // if (visited == null) {
+    $( "#dialog" ).dialog();
+  // });
+
+  }
+  console.log("This user has visited" + times_visited + "times")
+
+  //  $(function() {
+  //   $( "#dialog" ).dialog();
+  // });
+
 
   // We want to watch for the customer to add a drink to their order
   // Every time they do, we want to give them another empty order option they can add
